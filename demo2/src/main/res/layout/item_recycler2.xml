@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="contactsInfo"
+            type="com.trj.tlib.bean.ContactsInfo" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingTop="@dimen/dp5"
+        android:paddingRight="@dimen/dp12"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/item_recycler_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:text="@{contactsInfo.name}"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+</layout>

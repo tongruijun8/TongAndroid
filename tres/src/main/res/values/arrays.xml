@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="refresh">
+        <item>#23caa9</item>
+        <item>#ca23a9</item>
+        <item>#a9ca23</item>
+        <item>#23456a</item>
+    </array>
+</resources>

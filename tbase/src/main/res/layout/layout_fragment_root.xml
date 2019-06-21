@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 标题栏 -->
+    <ViewStub
+        android:id="@+id/root_title_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!-- 内容栏 -->
+    <ViewStub
+        android:id="@+id/root_content_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_rl"/>
+
+</RelativeLayout>

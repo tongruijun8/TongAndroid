@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_waikuang_r5_white"
+        >
+
+        <com.trj.tlib.views.TListView
+            android:id="@+id/td_sb_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            >
+
+        </com.trj.tlib.views.TListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/td_sb_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/tdialog_color_cancle"
+        android:background="@drawable/dialog_waikuang_r5_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

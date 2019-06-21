@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.TestTDialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="一般的弹框"
+            android:onClick="commonDialog"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="加载框"
+            android:onClick="loadingDialog"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="底部选择框"
+            android:onClick="selectBottomDialog"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="查看图片"
+            android:onClick="selectImgs"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="查看图片2"
+            android:onClick="selectImgs2"
+            />
+
+
+        <ImageView
+            android:id="@+id/tdialog_img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/welcome"
+            android:onClick="lookImgDialog"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <ImageView
+            android:id="@+id/tdialog_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/welcome"
+            android:onClick="imageViewActivity"
+            />
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="图片查看框"-->
+            <!--android:onClick="lookImgDialog"-->
+            <!--/>-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>

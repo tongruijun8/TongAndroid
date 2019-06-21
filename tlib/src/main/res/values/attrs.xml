@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundProgressbar">
+
+        <!-- 圆环的宽度 -->
+        <attr name="ring_width" format="integer"/>
+        <!-- 进度[0,1]） -->
+        <attr name="progress" format="float"/>
+        <!-- 内容 -->
+        <attr name="ring_text" format="string"/>
+
+        <!-- 内容大小 -->
+        <attr name="ring_text_size" format="integer"/>
+
+        <!-- 圆的底色 -->
+        <attr name="color_bg" format="color"/>
+        <!-- 圆的进度颜色 -->
+        <attr name="color_progress" format="color"/>
+        <!-- 内容颜色 -->
+        <attr name="color_text" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="RoundTextView">
+
+        <!-- 圆环的宽度 -->
+        <attr name="rtextview_width" format="integer"/>
+        <!-- 进度[0,1]） -->
+        <attr name="rtextview_progress" format="float"/>
+
+        <!-- 圆的底色 -->
+        <attr name="rtextview_bg_color" format="color"/>
+        <!-- 圆的进度颜色 -->
+        <attr name="rtextview_progress_color" format="color"/>
+
+        <!-- 是否显示圆环 -->
+        <attr name="rtextview_show" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DotView">
+        <!-- 点的大小 -->
+        <attr name="dotview_size" format="dimension"/>
+        <!-- 线条的宽度 -->
+        <attr name="dotview_line_size" format="dimension"/>
+        <!-- 空心点的宽度 -->
+        <attr name="dotview_hollow_width" format="dimension"/>
+        <!-- 点的颜色 -->
+        <attr name="dotview_color" format="color"/>
+        <!-- 线的颜色 -->
+        <attr name="dotview_color_line" format="color"/>
+        <!--&lt;!&ndash; 线的颜色 &ndash;&gt;-->
+        <!--<attr name="dotview_color_background" format="color"/>-->
+        <!-- 点的类型 -->
+        <attr name="dotview_type">
+            <flag name="blank" value="0x0000"/>
+            <flag name="fill" value="0x0001"/>
+            <flag name="hollow" value="0x0002"/>
+            <flag name="line_top" value="0x0004"/>
+            <flag name="line_bottom" value="0x0008"/>
+            <flag name="line_left" value="0x0010"/>
+            <flag name="line_right" value="0x0020"/>
+            <flag name="line_horizontal" value="0x0040"/>
+            <flag name="line_vertical" value="0x0080"/>
+        </attr>
+
+    </declare-styleable>
+
+    <!--字母导航栏的属性-->
+    <declare-styleable name="SidebarView2">
+        <!-- 点击时的背景色 -->
+        <attr name="sv2_bg_click_color" format="color"/>
+        <!-- 文字的颜色 -->
+        <attr name="sv2_text_color" format="color"/>
+        <!-- 文字点击时的颜色 -->
+        <attr name="sv2_text_click_color" format="color"/>
+        <!-- 文字大小 -->
+        <attr name="sv2_text_size" format="dimension"/>
+        <!-- 用于设置分割单元的个数：默认为26 -->
+        <attr name="sv2_min_len" format="integer"/>
+    </declare-styleable>
+
+    <!--星星控件属性-->
+    <declare-styleable name="StarBarView">
+        <!--设置星星间的间隔-->
+        <attr name="space_width" format="dimension" />
+        <!--星星间宽度-->
+        <attr name="star_width" format="dimension" />
+        <!--星星间高度-->
+        <attr name="star_height" format="dimension" />
+        <!--最大数量-->
+        <attr name="star_max" format="integer" />
+        <!--选中数量-->
+        <attr name="star_rating" format="float" />
+        <!--未选中图片-->
+        <attr name="star_hollow" format="reference" />
+        <!--选中图片-->
+        <attr name="star_solid" format="reference" />
+        <!--是否可以滑动改变选中数量-->
+        <attr name="star_isIndicator" format="boolean" />
+        <!--排列方向-->
+        <attr name="star_orientation" format="enum">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TRoundImageView">
+        <attr name="radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,1 @@
+include ':demo2', ':tres', ':tlib', ':tbase', ':textapp', ':test_baidu_map', ':test_baidu_map_nav'

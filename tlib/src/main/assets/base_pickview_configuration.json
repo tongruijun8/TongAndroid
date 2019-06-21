@@ -1,0 +1,22 @@
+{
+  "titleText":"",
+  "confirmText":"确认",
+  "cancelText":"取消",
+
+  "titleTextSize":16,
+  "confirmTextSize":16,
+  "cancelTextSize":16,
+  "textSizeContent":14,
+
+  "dividerColor":"#5b9ac5",
+  "contentBgColor":"#5b9ac5",
+  "textSelectItemColor":"#5b9ac5",
+  "textNoSelectItemColor":"#5b9ac5",
+  "titleBgColor":"#5b9ac5",
+  "titleTextColor":"#5b9ac5",
+  "textColorConfirm":"#5b9ac5",
+  "textColorCancel":"#5b9ac5",
+
+  "isAllLine":true,
+  "cancelable":true
+}

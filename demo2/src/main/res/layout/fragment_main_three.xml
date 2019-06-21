@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fm_three_tdialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:gravity="center"
+            android:text="tdialog测试"
+            android:textSize="@dimen/sp16"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

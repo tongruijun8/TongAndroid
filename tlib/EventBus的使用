@@ -1,0 +1,15 @@
+Subscribe中可以传三种值：
+
+1、ThreadMode：这是个枚举，有四个值，决定订阅函数在哪个线程执行
+
+    PostThread：事件发送者在哪个线程就执行在哪个线程。同2.x中的onEvent方法，默认值就是这个
+    MainThread：订阅函数一定执行在主线程。同onEventMainThread方法
+    BackgroundThread：如果是事件从子线程发出，订阅函数就执行在那个子线程，不会创建新的子线程；
+                      如果主线程发出事件，则创建子线程。同onEventBackgroundThread方法
+    Async：一定创建子线程。同onEventAsync方法。
+
+2、sticky：默认为false，如果为true，当通过postSticky发送一个事件时，这个类型的事件的最后一次事件会被缓存起来，
+当有订阅者注册时，会把之前缓存起来的这个事件直接发送给它。使用在比如事件发送者先启动了，订阅者还没启动的情况。
+
+3、priority：默认值为0。订阅了同一个事件的订阅函数，在ThreadMode值相同的前提下，收到事件的优先级。
+

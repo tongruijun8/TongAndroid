@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.trj.demo2.bean.Users"/>
+    </data>
+    
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingRight="@dimen/dp12"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="5dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/dp2"
+        >
+
+        <com.trj.tlib.views.TRoundImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:imgUrl="@{user.user_photo}"
+            app:radius="@dimen/dp5"
+            />
+
+        <TextView
+            android:id="@+id/item_recycler_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.user_nick}"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/color_black"
+            android:layout_marginLeft="@dimen/dp50"/>
+
+        <TextView
+            android:id="@+id/item_recycler_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.user_phone}"
+            android:textSize="@dimen/sp16"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_black"
+            android:layout_marginLeft="@dimen/dp50"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context=".test.LookMoreImgActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/td_look_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <include layout="@layout/ttitle"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:textColor="@color/color_white"
+        android:background="@color/color_transparent_half"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

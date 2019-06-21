@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test.TestHandlerActivity">
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp100"
+        android:inputType="number"
+        android:background="@drawable/waikuang_r5_zhuseline"
+        android:layout_margin="@dimen/dp10"
+        android:gravity="start"
+        android:hint="输入数字"
+        android:padding="@dimen/dp5"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:onClick="cal"
+        android:text="计算"/>
+
+    <TextView
+        android:id="@+id/jgtext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="质数显示"
+        />
+
+</LinearLayout>

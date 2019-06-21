@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="user"
+            type="com.trj.demo2.bean.Users"/>
+
+        <variable
+            name="presenter"
+            type="com.trj.demo2.TestDataBindingActivity.Presenter"/>
+
+        <!--现在可以在XML中使用视图类的静态资源;alias 别名；-->
+        <!--<import type="android.view.View"/>-->
+        <!--<import type="android.view.View" alias="view"/>-->
+
+    </data>
+
+    <!--支持的运算符：-->
+    <!--<ul>-->
+        <!--<li>数学运算符：+  -  / *％</ li>-->
+        <!--<li>字符串拼接：+ </ li>-->
+        <!--<li>逻辑运算符：&& || </ li>-->
+        <!--<li>二进制：＆| ^ </ li>-->
+        <!--<li>一元运算符：+ </ li>-->
+        <!--<li>位运算符：>> >>> <<< / li>-->
+        <!--<li>比较：==> <> = <= </ li>-->
+        <!--<li> instanceof </ li>-->
+        <!--<li>（）</ li>-->
+        <!--<li>数据类型：character，String，numeric，null </ li>-->
+        <!--<li>类型转换（ClassCast）</ li>-->
+        <!--<li >方法回调（方法调用）</ li>-->
+        <!--<li>数据属性</ li>-->
+        <!--<li>数组：[] </ li>-->
+        <!--<li>三元操作符：？</ li>-->
+    <!--</ ul>-->
+
+    <!--一个比较有意思的“??”操作符：-->
+    <!--android:text="@{user.displayName ?? user.lastName}" 等同于以下-->
+    <!--android:text="@{user.displayName != null ? user.displayName : user.lastName}"-->
+
+
+    <!--自定义绑定类类名：生成当前目录下的ContactItemBinding-->
+    <!--<data class="ContactItem">-->
+    <!--</data>-->
+
+    <!--下面是个集合的例子：-->
+    <!--<data>-->
+    <!--<import type="com.example.User"/>-->
+    <!--<import type="java.util.List"/>-->
+    <!--<variable name="user" type="User"/>-->
+    <!--<variable name="userList" type="List<User>"/>-->
+    <!--</data>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/ttitle"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/dp100"-->
+            <!--android:layout_height="@dimen/dp100"-->
+            <!--android:src="@{user.user_photo}"/>-->
+
+        <TextView
+            android:id="@+id/test_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:gravity="center"
+            android:text="@{user.user_name}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:gravity="center"
+            android:text="@{user.user_address}"
+            android:onClick="@{presenter.onClickAddress}"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp80"
+            android:gravity="left|top"
+            android:afterTextChanged="@{presenter.afterTextChanged}"
+            />
+
+    </LinearLayout>
+</layout>

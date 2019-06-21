@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.trj.demo2">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+
+    <application
+        android:name=".base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".TestDataBindingActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.trj.demo2.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_filepaths"/>
+        </provider>
+
+        <activity android:name=".testmvp.TestMVPActivity" />
+        <activity android:name=".testmvp.recyclerview.TestRecyclerviewActivity" />
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainNavBottomActivity" />
+        <activity android:name=".test.ImageActivity" />
+        <activity android:name=".test.TestSelectImgActivity" />
+        <activity android:name=".test.TestTDialogActivity" />
+        <activity android:name=".test.TestBasePickViewActivity" />
+        <activity android:name=".test.TestRoundImageViewActivity" />
+        <activity android:name=".test.LookBigImgActivity" />
+        <activity
+            android:name=".test.LookMoreImgActivity"
+            android:theme="@style/AppTheme.NoActionBar2"></activity>
+        <activity android:name=".test.TestHandlerActivity"
+            >
+
+        </activity>
+    </application>
+
+</manifest>

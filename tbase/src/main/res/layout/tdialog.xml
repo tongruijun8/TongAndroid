@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/color_black"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+    <TextView
+        android:id="@+id/tdilog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="加载中..."
+        android:textColor="#FFFEFE"
+        android:textSize="16sp" />
+</LinearLayout>
+

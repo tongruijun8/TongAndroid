@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_kecheng_bg_rl"
+    android:background="@color/transparent"
+    >
+    <RelativeLayout
+        android:id="@+id/item_kecheng_show_rl"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_waikuang_r5_white"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/kecheng_name" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="课程名称"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dialog_textcolor_ts" />
+
+                <TextView
+                    android:id="@+id/item_kecheng_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/dialog_textcolor" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/kecheng_address"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="上课教室"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dialog_textcolor_ts"
+                    />
+
+                <TextView
+                    android:id="@+id/item_kecheng_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dialog_textcolor"
+                    android:layout_marginLeft="110dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/kecheng_tea"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="上课老师"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dialog_textcolor_ts"
+                    />
+
+                <TextView
+                    android:id="@+id/item_kecheng_tea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dialog_textcolor"
+                    android:layout_marginLeft="110dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/kecheng_grade"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:text="上课班级"
+                    android:textColor="@color/dialog_textcolor_ts"
+                    />
+
+                <TextView
+                    android:id="@+id/item_kecheng_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dialog_textcolor"
+                    android:layout_marginLeft="110dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/kecheng_title"
+            android:gravity="center"
+            android:text="课程详情"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

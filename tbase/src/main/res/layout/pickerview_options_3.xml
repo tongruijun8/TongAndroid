@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/all_ll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dialog_waikuang_top"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#24AD9D"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            app:srcCompat="@mipmap/tpv_left"
+            android:layout_toLeftOf="@id/tv_title"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/tpv_right"
+            android:paddingRight="30dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/tv_title"
+            />
+
+    </RelativeLayout>
+
+    <!--此部分需要完整复制过去，删减或者更改ID会导致初始化找不到内容而报空-->
+    <LinearLayout
+        android:id="@+id/optionspicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/options1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/options2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/options3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_waikuang_bottom">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/dialog_zhuse"
+            android:textSize="18sp"
+            android:background="@drawable/dialog_waikuang_r5_zhuseline"/>
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:text="完成"
+            android:gravity="center"
+            android:background="@drawable/dialog_waikuang_r5_zhuse"
+            android:textColor="@color/color_white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

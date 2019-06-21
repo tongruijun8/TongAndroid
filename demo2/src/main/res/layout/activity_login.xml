@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.trj.demo2.bean.req.ReqLoginBean" />
+
+        <variable
+            name="event"
+            type="com.trj.demo2.activity.LoginActivity.LoginEvent"/>
+
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginTop="@dimen/dp50"
+                android:layout_marginBottom="@dimen/dp20"
+                android:src="@mipmap/tlogo_1" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/login_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:afterTextChanged="@{event.phoneTextChanged}"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@{bean.userName}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:afterTextChanged="@{event.pswTextChanged}"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@{bean.userPsw}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/login_loginbtn"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/select_button"
+                android:text="@string/action_sign_in"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:onClick="onClickLogin"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

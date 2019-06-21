@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_waikuang_r5_white"
+    android:orientation="vertical">
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/tdialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tdialog_icon"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@mipmap/tdialog_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tdialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tdialog_icon"
+            android:gravity="center_vertical"
+            android:text="标题"
+            android:textColor="@color/tdialog_color_title"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e1e1e1" />
+    </RelativeLayout>
+
+    <!-- 内容 -->
+    <RelativeLayout
+        android:id="@+id/tdialog_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tdialog_center_msg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:textColor="@color/tdialog_color_msg"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/tdialog_center_msg_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:textColor="@color/tdialog_color_msg"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textCursorDrawable="@color/dialog_zhuse"
+            android:inputType="text|textMultiLine|textImeMultiLine"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tdialog_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tdialog_bottom_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/tdialog_color_cancle"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tdialog_bottom_affirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/tdialog_color_affirm"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

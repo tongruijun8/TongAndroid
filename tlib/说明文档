@@ -1,0 +1,7 @@
+此lib为开发的基本框架：
+
+采用的技术
+
+权限申请：easypermissions ， RxPermissions(当前)
+
+注：①整体采用沉侵式状态栏

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="user"
+            type="com.trj.demo2.bean.Users"/>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".testmvp.TestMVPActivity">
+
+        <include layout="@layout/ttitle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="测试MVP"
+            android:onClick="onClickTextMvp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="测试Post"
+            android:onClick="onClickTextPost"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="测试列表"
+            android:onClick="onClickTextList"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="红色标题"
+            android:onClick="onClickTitleBgRed"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="蓝色标题"
+            android:onClick="onClickTitleBgBlue"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="绿色标题"
+            android:onClick="onClickTitleBgGreen"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@{user.msg}"
+            />
+
+    </LinearLayout>
+
+</layout>

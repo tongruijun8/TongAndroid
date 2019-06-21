@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.trj.tlib.views.TRoundImageView
+            android:id="@+id/roundimg1"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp10" />
+
+        <com.trj.tlib.views.TRoundImageView
+            android:id="@+id/roundimg2"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp20" />
+
+        <com.trj.tlib.views.TRoundImageView
+            android:id="@+id/roundimg3"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp30" />
+
+        <com.trj.tlib.views.TRoundImageView
+            android:id="@+id/roundimg4"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp40" />
+
+        <com.trj.tlib.views.TRoundImageView
+            android:id="@+id/roundimg5"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp48" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            />
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
